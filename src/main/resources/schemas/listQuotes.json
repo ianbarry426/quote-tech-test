@@ -1,0 +1,71 @@
+{
+  "definitions": {},
+  "type": "object",
+  "required": [
+    "page",
+    "last_page",
+    "quotes"
+  ],
+  "properties": {
+    "page": {
+      "type": "integer"
+    },
+    "last_page": {
+      "type": "boolean"
+    },
+    "quotes": {
+      "type": "array",
+      "quotes": {
+        "type": "object",
+        "required": [
+          "tags",
+          "favorite",
+          "author_permalink",
+          "body",
+          "id",
+          "favorites_count",
+          "upvotes_count",
+          "downvotes_count",
+          "dialogue",
+          "author",
+          "url"
+        ],
+        "properties": {
+          "tags": {
+            "type": "array"
+          },
+          "favourite": {
+            "type": "boolean"
+          },
+          "author_permalink": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "favorites_count": {
+            "type": "integer"
+          },
+          "upvotes_count": {
+            "type": "intger"
+          },
+          "downvotes_count": {
+            "type": "integer"
+          },
+          "dialogue": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
